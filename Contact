@@ -1,0 +1,16 @@
+
+---
+
+#### **2. AI Engine (AI Chatbot ve Görsel Üretici)**
+- `ai_engine/chatbot.py`:
+```python
+def chatbot_response(prompt):
+    responses = {
+        "hello": "Hello! How can I help you?",
+        "who are you?": "I am NeusAi, your intelligent assistant.",
+    }
+    return responses.get(prompt.lower(), "I'm sorry, I don't understand that.")
+
+if __name__ == "__main__":
+    user_input = input("You: ")
+    print("Bot:", chatbot_response(user_input))
