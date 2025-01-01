@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NeusAi - Chat & Generate</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to NeusAi</h1>
+    <p>Interact with the AI chatbot or generate AI-powered visuals!</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Chat with NeusAi</h2>
+      <input type="text" id="chat-input" placeholder="Type your message here...">
+      <button onclick="sendMessage()">Send</button>
+      <div id="chat-log"></div>
+    </section>
+
+    <section>
+      <h2>Generate an AI Image</h2>
+      <input type="text" id="image-prompt" placeholder="Enter a prompt for the image...">
+      <button onclick="generateImage()">Generate</button>
+      <div id="image-result"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 NeusAi - Powered by Solana</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
